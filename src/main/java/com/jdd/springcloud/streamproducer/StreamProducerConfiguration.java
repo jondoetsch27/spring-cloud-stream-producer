@@ -14,7 +14,7 @@ public class StreamProducerConfiguration {
 
   @Bean
   @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
-  public Supplier<Player> playerSupplier() {
+  public Supplier<Player> supplier() {
     return () -> {
       return playerBlockingQueue().poll();
     };
