@@ -3,7 +3,7 @@ package com.jdd.springcloud.streamproducer.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 
-public class TestPlayer implements Serializable {
+public class Player implements Serializable {
 
   @JsonProperty("player_id")
   private String playerId;
@@ -17,8 +17,8 @@ public class TestPlayer implements Serializable {
   @JsonProperty("player_number")
   private String playerNumber;
 
-  public TestPlayer(String playerId, String playerFirstName, String playerLastName,
-      String playerNumber) {
+  public Player(String playerId, String playerFirstName, String playerLastName,
+                String playerNumber) {
     this.playerId = playerId;
     this.playerFirstName = playerFirstName;
     this.playerLastName = playerLastName;
